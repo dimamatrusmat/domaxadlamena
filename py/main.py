@@ -4,10 +4,10 @@ import random as rand
 
 import time
 
-
 class generate():
 	def random_number():
-		return int(randint(1,100))
+		return int(rand.randint(0,100))
+	random_number()
 
 def reversed_str():
 	input_text = input()
@@ -23,6 +23,7 @@ def reversed_str():
 			i = 0
 		print(summintext)
 
+print(str(generate()))
 
 words = input()
 while True:
@@ -54,7 +55,6 @@ while True:
 					print('ERROR, TRY AGAIN \n')
 					i = 0
 			elif (i == 101):
-				words = '4'
 				reversed_str()
 	elif words.lower() == '6':
 		print(rand, type(rand))
